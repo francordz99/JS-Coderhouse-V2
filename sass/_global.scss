@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$color1 :#ffffff;
+/* Color De Letra */
+$color2 :#181a1b;
+/* Color Del Fondo */
+$color3 :#ff0000;
+/* Color De Botones - Elementos */
+$gradient1 :#ff0000;
+/* Color Del Gradiente (Menu Hamburguesa) 1 */
+$gradient2 :rgb(38, 0, 255);
+/* Color Del Gradiente (Menu Hamburguesa) 2 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: $color2;
+    color: $color1;
+}

@@ -1,0 +1,14 @@
+@import "global";
+@import "headerfooter";
+@import "cart";
+
+/* Catalogo */
+
+.card {
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+
+    h5 {
+        font-weight: bold;
+    }
+}
