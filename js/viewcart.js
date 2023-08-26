@@ -77,13 +77,21 @@ const cartFunction = () => {
 
     const checkout = document.getElementById("checkout");
     checkout.addEventListener("click", () => {
-        Swal.fire(
-            'Excelente!',
-            'Tu compra ha sido confirmada y sera despachada a la brevedad',
-            'success',
-        )
-    })
-};
+        if (cart.length === 0) {
+            Swal.fire(
+                'Error',
+                'No puedes finalizar la compra sin ningún item en el carrito',
+                'error'
+            );
+        } else {
+            Swal.fire(
+                'Excelente!',
+                'Tu compra ha sido confirmada y será despachada a la brevedad',
+                'success'
+            );
+        }
+    });
+}
 
 viewcart.addEventListener("click", cartFunction);
 
@@ -107,4 +115,3 @@ const cartCounter = () => {
 };
 
 cartCounter();
-
